@@ -1,0 +1,22 @@
+t=int(input())
+for i in range(t):
+    nl=[]
+    n,x=map(int,input().split())
+    l=list(map(int,input().split()))
+    ld=2*(x-l[n-1])
+    fd=l[0]-0
+    if n == 1:
+        print(max(l[0],2*(x-l[0])))
+    else:
+        for j in range(n-1):
+            diff=l[j+1]-l[j]
+            nl.append(diff)
+        gd=max(nl)
+        if(ld>gd and ld>fd):
+            print(ld)
+        elif(fd>gd):
+            print(fd)    
+        else:
+            print(gd)        
+        
+        
