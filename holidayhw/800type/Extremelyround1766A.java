@@ -1,7 +1,7 @@
 // code work well and in time limit
 import java.util.*;
 
-public class Extremeround1766A {
+public class Extremelyround1766A {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
